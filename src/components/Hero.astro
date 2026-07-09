@@ -1,0 +1,75 @@
+---
+
+const services = [
+  "SEO Audit",
+  "Technical SEO",
+  "On-Page SEO",
+  "Keyword Research",
+  "Content Strategy",
+  "E-commerce SEO",
+  "SEO لمتاجر سلة",
+  "Off-Page SEO"
+];
+
+---
+
+<section class="hero" id="home">
+
+  <div class="container hero-grid">
+
+    <div class="hero-content">
+
+      <span class="badge">
+        🚀 متخصص SEO منذ 2020
+      </span>
+
+      <h1>
+        أحمد مسعود
+      </h1>
+
+      <h2>
+        متخصص تحسين محركات البحث للمواقع والمتاجر الإلكترونية
+      </h2>
+
+      <p>
+        أساعد أصحاب المواقع والمتاجر الإلكترونية على زيادة الزيارات العضوية وتحسين ترتيب الكلمات المفتاحية من خلال استراتيجيات SEO عملية تعتمد على البيانات والنتائج.
+      </p>
+
+      <div class="services-wrapper">
+
+        <div class="services-title">
+
+          <h3>💼 خبراتي في تحسين محركات البحث</h3>
+
+        </div>
+
+        <div class="services">
+
+          {
+            services.map(service => (
+              <span>{service}</span>
+            ))
+          }
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="hero-image">
+
+      <img
+        src="/profile.png"
+        alt="Ahmed Masoud - SEO Specialist"
+        width="460"
+        height="460"
+        fetchpriority="high"
+        decoding="async"
+      />
+
+    </div>
+
+  </div>
+
+</section>

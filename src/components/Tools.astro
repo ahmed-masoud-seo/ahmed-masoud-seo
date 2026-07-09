@@ -1,0 +1,115 @@
+---
+
+const tools = [
+
+  {
+    name: "Google Search Console",
+    image: "/tools/google-search-console.svg"
+  },
+
+  {
+    name: "Google Analytics",
+    image: "/tools/google-analytics.svg"
+  },
+
+  {
+    name: "Google Tag Manager",
+    image: "/tools/google-tag-manager.svg"
+  },
+
+  {
+    name: "Ahrefs",
+    image: "/tools/ahrefs.png"
+  },
+
+  {
+    name: "SEMrush",
+    image: "/tools/semrush.png"
+  },
+
+  {
+    name: "Screaming Frog",
+    image: "/tools/screaming-frog.jpeg"
+  },
+
+  {
+    name: "PageSpeed Insights",
+    image: "/tools/pagespeed.svg"
+  },
+
+  {
+    name: "Keyword Planner",
+    image: "/tools/keyword-planner.png"
+  },
+
+  {
+    name: "Bing Webmaster Tools",
+    image: "/tools/bing-webmaster-tools.png"
+  },
+
+  {
+    name: "Google Looker Studio",
+    image: "/tools/google-looker-studio.png"
+  },
+
+  {
+    name: "Yoast SEO",
+    image: "/tools/yoast.jpeg"
+  },
+
+  {
+    name: "Rank Math",
+    image: "/tools/rank-math.png"
+  }
+
+];
+
+---
+
+<section class="tools-section">
+
+  <div class="container">
+
+    <span class="section-badge">
+      أدوات SEO
+    </span>
+
+    <h2>
+      الأدوات التي أعتمد عليها في تحسين محركات البحث
+    </h2>
+
+    <p class="section-description">
+      أستخدم مجموعة من أفضل أدوات تحسين محركات البحث وتحليل البيانات لمراقبة أداء المواقع والمتاجر الإلكترونية، واكتشاف فرص النمو، واتخاذ قرارات مبنية على البيانات لتحقيق أفضل النتائج.
+    </p>
+
+    <div class="tools-grid">
+
+      {
+        tools.map(tool => (
+
+          <div class="tool-card">
+
+            <div class="tool-image">
+
+              <img
+                src={tool.image}
+                alt={tool.name}
+                loading="lazy"
+                decoding="async"
+                fetchpriority="low"
+              />
+
+            </div>
+
+            <h3>{tool.name}</h3>
+
+          </div>
+
+        ))
+      }
+
+    </div>
+
+  </div>
+
+</section>

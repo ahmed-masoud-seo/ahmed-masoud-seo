@@ -1,0 +1,253 @@
+---
+
+const links = [
+  { title: "الرئيسية", href: "#home" },
+  { title: "من أنا", href: "#about" },
+  { title: "خدمات SEO", href: "#services" },
+  { title: "المشاريع", href: "#projects" },
+  { title: "الشهادات", href: "#certificates" },
+  { title: "تواصل", href: "#contact" },
+];
+
+---
+
+<header class="navbar">
+
+  <div class="container navbar-container">
+
+    <a href="#home" class="brand">
+
+      <img src="/profile.png" alt="Ahmed Masoud" />
+
+      <div>
+
+        <h3>أحمد مسعود</h3>
+
+        <p>SEO Specialist</p>
+
+      </div>
+
+    </a>
+
+    <nav>
+
+      {
+        links.map((link) => (
+
+          <a href={link.href}>
+
+            {link.title}
+
+          </a>
+
+        ))
+      }
+
+    </nav>
+
+    <a
+      href="https://wa.me/201141289932"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="contact-btn"
+    >
+
+      احجز استشارة SEO
+
+    </a>
+
+  </div>
+
+</header>
+
+<style>
+
+.navbar{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+right:0;
+
+background:rgba(255,255,255,.96);
+
+backdrop-filter:blur(10px);
+
+box-shadow:0 8px 25px rgba(0,0,0,.05);
+
+z-index:999;
+
+}
+
+.navbar-container{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+height:82px;
+
+}
+
+.brand{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+text-decoration:none;
+
+}
+
+.brand img{
+
+width:56px;
+
+height:56px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+}
+
+.brand h3{
+
+font-size:22px;
+
+margin:0;
+
+color:#111827;
+
+font-weight:800;
+
+}
+
+.brand p{
+
+margin-top:4px;
+
+font-size:15px;
+
+color:#6b7280;
+
+}
+
+nav{
+
+display:flex;
+
+gap:34px;
+
+}
+
+nav a{
+
+text-decoration:none;
+
+color:#374151;
+
+font-weight:700;
+
+transition:.3s;
+
+position:relative;
+
+}
+
+nav a::after{
+
+content:"";
+
+position:absolute;
+
+bottom:-8px;
+
+left:0;
+
+width:0;
+
+height:2px;
+
+background:#2563eb;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#2563eb;
+
+}
+
+nav a:hover::after{
+
+width:100%;
+
+}
+
+.contact-btn{
+
+background:#2563eb;
+
+color:white;
+
+padding:14px 24px;
+
+border-radius:12px;
+
+font-weight:700;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.contact-btn:hover{
+
+background:#1d4ed8;
+
+transform:translateY(-3px);
+
+}
+
+@media(max-width:900px){
+
+nav{
+
+display:none;
+
+}
+
+.brand h3{
+
+font-size:18px;
+
+}
+
+.brand p{
+
+font-size:13px;
+
+}
+
+.contact-btn{
+
+padding:12px 18px;
+
+font-size:14px;
+
+}
+
+}
+
+</style>

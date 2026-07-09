@@ -1,0 +1,64 @@
+---
+
+const stats = [
+  {
+    number: "1.78M+",
+    title: "مرات الظهور",
+    subtitle: "alkhaleejalaan.com"
+  },
+  {
+    number: "1.13M+",
+    title: "مرات الظهور",
+    subtitle: "DaleelShamel.me"
+  },
+  {
+    number: "92.5K",
+    title: "ظهور شهري",
+    subtitle: "ShareBlog100.com"
+  },
+  {
+    number: "+50%",
+    title: "نمو الزيارات",
+    subtitle: "Organic Traffic"
+  }
+];
+
+---
+
+<section class="stats" id="results">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>📈 نتائج حقيقية حققتها</h2>
+
+<p>
+أرقام فعلية من مشاريع عملت عليها في تحسين محركات البحث.
+</p>
+
+</div>
+
+<div class="stats-grid">
+
+{
+stats.map(item => (
+
+<div class="stat-card">
+
+<h3>{item.number}</h3>
+
+<h4>{item.title}</h4>
+
+<span>{item.subtitle}</span>
+
+</div>
+
+))
+}
+
+</div>
+
+</div>
+
+</section>

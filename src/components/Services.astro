@@ -1,0 +1,102 @@
+---
+
+const services = [
+  {
+    title: "SEO Audit",
+    desc: "تحليل شامل للموقع لاكتشاف المشكلات التقنية وفرص تحسين الأداء.",
+    points: ["تحليل الفهرسة", "تحليل السرعة", "Core Web Vitals"]
+  },
+
+  {
+    title: "Technical SEO",
+    desc: "تحسين البنية التقنية للموقع لتسهيل الزحف والفهرسة.",
+    points: ["Schema", "Robots.txt", "Sitemap"]
+  },
+
+  {
+    title: "On-Page SEO",
+    desc: "تحسين صفحات الموقع لتحقيق أفضل ترتيب في نتائج البحث.",
+    points: ["العناوين", "الميتا", "الروابط الداخلية"]
+  },
+
+  {
+    title: "Keyword Research",
+    desc: "بناء استراتيجية كلمات مفتاحية تستهدف العملاء الحقيقيين.",
+    points: ["تحليل المنافسين", "Search Intent", "Long Tail"]
+  },
+
+  {
+    title: "Content Strategy",
+    desc: "إنشاء خطة محتوى تساعد على زيادة الزيارات العضوية.",
+    points: ["Blog", "Cluster", "Content Plan"]
+  },
+
+  {
+    title: "SEO لمتاجر سلة",
+    desc: "تحسين متاجر سلة بالكامل لزيادة الظهور والمبيعات.",
+    points: ["المنتجات", "التصنيفات", "المدونة"]
+  }
+
+];
+
+---
+
+<section class="services-section" id="services">
+
+<div class="container">
+
+<div class="section-header">
+
+<span>خدماتي</span>
+
+<h2>
+
+الخدمات التي أقدمها
+
+</h2>
+
+<p>
+
+حلول SEO متكاملة للمواقع والمتاجر الإلكترونية.
+
+</p>
+
+</div>
+
+<div class="services-grid">
+
+{
+
+services.map(service=>(
+
+<div class="service-card">
+
+<h3>{service.title}</h3>
+
+<p>{service.desc}</p>
+
+<ul>
+
+{
+
+service.points.map(point=>(
+
+<li>✔ {point}</li>
+
+))
+
+}
+
+</ul>
+
+</div>
+
+))
+
+}
+
+</div>
+
+</div>
+
+</section>

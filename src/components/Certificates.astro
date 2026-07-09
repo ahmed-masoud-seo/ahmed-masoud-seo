@@ -1,0 +1,96 @@
+---
+
+const certificates = [
+
+  {
+    title: "Technical SEO",
+    provider: "Blue Array",
+    image: "/certificates/technical-seo-blue-array.png"
+  },
+
+  {
+    title: "Google SEO Fundamentals",
+    provider: "Coursera",
+    image: "/certificates/google-seo-fundamentals.png"
+  },
+
+  {
+    title: "Introduction to Google SEO",
+    provider: "Coursera",
+    image: "/certificates/introduction-google-seo.png"
+  },
+
+  {
+    title: "Digital Marketing",
+    provider: "Udacity",
+    image: "/certificates/udacity-digital-marketing.png"
+  },
+
+  {
+    title: "Digital Analytics",
+    provider: "Edraak",
+    image: "/certificates/digital-analytics-edraak.png"
+  },
+
+  {
+    title: "SEO Fundamentals",
+    provider: "Edraak",
+    image: "/certificates/seo-edraak.png"
+  }
+
+];
+
+---
+
+<section class="certificates" id="certificates">
+
+  <div class="container">
+
+    <span class="section-badge">
+      الشهادات والاعتمادات
+    </span>
+
+    <h2>
+      شهادات احترافية في SEO والتسويق الرقمي
+    </h2>
+
+    <p class="section-description">
+      أحرص على تطوير مهاراتي باستمرار من خلال الحصول على شهادات معتمدة في تحسين محركات البحث، والتسويق الرقمي، وتحليل البيانات من جهات تعليمية معروفة عالميًا.
+    </p>
+
+    <div class="certificates-grid">
+
+      {
+
+        certificates.map(certificate => (
+
+          <div class="certificate-card">
+
+            <img
+              src={certificate.image}
+              alt={`${certificate.title} Certificate - ${certificate.provider}`}
+              class="certificate-image"
+              loading="lazy"
+              decoding="async"
+              fetchpriority="low"
+            />
+
+            <div class="certificate-content">
+
+              <h3>{certificate.title}</h3>
+
+              <span>{certificate.provider}</span>
+
+            </div>
+
+          </div>
+
+        ))
+
+      }
+
+    </div>
+
+  </div>
+
+</section>
