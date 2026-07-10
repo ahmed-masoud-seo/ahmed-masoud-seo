@@ -5,31 +5,26 @@ const faqs = [
     answer:
       "SEO أو تحسين محركات البحث هو مجموعة من الاستراتيجيات والتقنيات التي تساعد على تحسين ظهور المواقع والمتاجر الإلكترونية في نتائج البحث المجانية على Google. يشمل ذلك تحسين السيو التقني، وتحسين المحتوى، والبحث عن الكلمات المفتاحية، وبناء الروابط الداخلية، بهدف زيادة الزيارات العضوية وتحقيق نمو مستدام للموقع."
   },
-
   {
     question: "كم يستغرق ظهور نتائج SEO؟",
     answer:
       "تختلف مدة ظهور نتائج تحسين محركات البحث حسب عمر الموقع، وحجم المنافسة، وجودة المحتوى، وحالة السيو التقني. في معظم الحالات تبدأ النتائج الأولية في الظهور خلال 3 إلى 6 أشهر، بينما تحتاج الكلمات المفتاحية التنافسية إلى وقت أطول لتحقيق مراكز متقدمة في نتائج بحث Google."
   },
-
   {
     question: "هل تعمل على تحسين SEO لمتاجر سلة؟",
     answer:
       "نعم، أقدم خدمات SEO لمتاجر سلة تشمل تحسين صفحات المنتجات، وصفحات التصنيفات، وتحسين السيو التقني، والبحث عن الكلمات المفتاحية، وتحسين تجربة المستخدم، وبناء استراتيجية محتوى تساعد المتجر على زيادة الزيارات العضوية وتحسين الظهور في نتائج البحث."
   },
-
   {
     question: "هل تقدم استشارات SEO؟",
     answer:
       "نعم، أقدم استشارات SEO للمواقع والمتاجر الإلكترونية، وتشمل تحليل الموقع، واكتشاف المشكلات التقنية، ووضع خطة لتحسين ترتيب الكلمات المفتاحية، وزيادة الزيارات العضوية، وتحسين الأداء العام في محركات البحث."
   },
-
   {
     question: "ما هي خدمات SEO التي تقدمها؟",
     answer:
       "تشمل خدماتي تحليل SEO شامل، والسيو التقني، وتحسين صفحات الموقع، والبحث عن الكلمات المفتاحية، وتحسين المحتوى، وتحسين سرعة الموقع، وتهيئة متاجر سلة وWordPress لمحركات البحث، مع التركيز على زيادة الزيارات المجانية وتحسين ترتيب الموقع في Google."
   },
-
   {
     question: "لماذا تختار العمل معي في خدمات SEO؟",
     answer:
@@ -58,17 +53,21 @@ const faqs = [
 
   <div class="container">
 
-    <span class="section-badge">
-      الأسئلة الشائعة
-    </span>
+    <div class="faq-header">
 
-    <h2>
-      الأسئلة الشائعة حول خدمات SEO
-    </h2>
+      <span class="section-badge">
+        الأسئلة الشائعة
+      </span>
 
-    <p class="section-description">
-      إليك إجابات عن أكثر الأسئلة شيوعًا حول تحسين محركات البحث وخدمات SEO للمواقع والمتاجر الإلكترونية.
-    </p>
+      <h2>
+        الأسئلة الشائعة حول خدمات SEO
+      </h2>
+
+      <p class="section-description">
+        إليك إجابات عن أكثر الأسئلة شيوعًا حول تحسين محركات البحث وخدمات SEO للمواقع والمتاجر الإلكترونية.
+      </p>
+
+    </div>
 
     <div class="faq-list">
 
@@ -100,9 +99,63 @@ const faqs = [
 
 .faq-section{
 
-padding:100px 0;
+padding:110px 0;
 
 background:#f8fafc;
+
+}
+
+.faq-header{
+
+max-width:850px;
+
+margin:0 auto 60px;
+
+text-align:center;
+
+}
+
+.section-badge{
+
+display:inline-block;
+
+padding:10px 18px;
+
+background:#DBEAFE;
+
+color:#2563EB;
+
+border-radius:999px;
+
+font-weight:700;
+
+font-size:15px;
+
+margin-bottom:20px;
+
+}
+
+.faq-header h2{
+
+font-size:42px;
+
+font-weight:800;
+
+margin-bottom:20px;
+
+color:#111827;
+
+}
+
+.section-description{
+
+font-size:18px;
+
+line-height:2;
+
+color:#64748b;
+
+margin:0;
 
 }
 
@@ -110,13 +163,13 @@ background:#f8fafc;
 
 max-width:900px;
 
-margin:60px auto 0;
+margin:0 auto;
 
 display:flex;
 
 flex-direction:column;
 
-gap:20px;
+gap:22px;
 
 }
 
@@ -126,17 +179,19 @@ background:#fff;
 
 border-radius:18px;
 
-box-shadow:0 10px 35px rgba(0,0,0,.06);
-
-overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,.06);
 
 transition:.3s;
+
+overflow:hidden;
 
 }
 
 .faq-item:hover{
 
 transform:translateY(-4px);
+
+box-shadow:0 18px 40px rgba(0,0,0,.08);
 
 }
 
@@ -146,17 +201,17 @@ list-style:none;
 
 cursor:pointer;
 
-padding:24px 28px;
-
-font-size:20px;
-
-font-weight:700;
+padding:24px 30px;
 
 display:flex;
 
 justify-content:space-between;
 
 align-items:center;
+
+font-size:20px;
+
+font-weight:700;
 
 }
 
@@ -172,9 +227,9 @@ content:"+";
 
 font-size:30px;
 
-color:#2563EB;
-
 font-weight:700;
+
+color:#2563EB;
 
 transition:.3s;
 
@@ -188,15 +243,15 @@ content:"−";
 
 .faq-content{
 
-padding:0 28px 28px;
+padding:0 30px 28px;
 
 }
 
 .faq-content p{
 
-line-height:2;
-
 font-size:17px;
+
+line-height:2;
 
 color:#475569;
 
@@ -204,19 +259,39 @@ margin:0;
 
 }
 
-@media(max-width:768px){
+@media (max-width:768px){
 
 .faq-section{
 
-padding:70px 0;
+padding:80px 0;
+
+}
+
+.faq-header{
+
+margin-bottom:40px;
+
+padding:0 20px;
+
+}
+
+.faq-header h2{
+
+font-size:30px;
+
+}
+
+.section-description{
+
+font-size:16px;
 
 }
 
 .faq-item summary{
 
-font-size:18px;
-
 padding:20px;
+
+font-size:17px;
 
 }
 
