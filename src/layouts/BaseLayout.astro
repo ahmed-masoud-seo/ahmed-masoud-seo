@@ -138,6 +138,45 @@ import Navbar from "../components/Navbar.astro";
     content="https://ahmed-masoud-seo.vercel.app/og-image.png"
   />
 
+  <!-- Structured Data -->
+
+  <script type="application/ld+json" is:inline>
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://ahmed-masoud-seo.vercel.app/#person",
+    "name": "Ahmed Masoud",
+    "alternateName": "أحمد مسعود",
+    "url": "https://ahmed-masoud-seo.vercel.app/",
+    "image": "https://ahmed-masoud-seo.vercel.app/profile.png",
+    "jobTitle": "SEO Specialist",
+    "description": "SEO Specialist helping websites and e-commerce stores improve organic visibility through Technical SEO, On-Page SEO, Keyword Research and Content Strategy.",
+    "email": "mailto:ahmedmasoud.business@gmail.com",
+
+    "sameAs": [
+      "https://www.linkedin.com/in/ahmed-masoud95/"
+    ],
+
+    "knowsAbout": [
+      "SEO",
+      "Technical SEO",
+      "On-Page SEO",
+      "Off-Page SEO",
+      "SEO Audit",
+      "Keyword Research",
+      "Content Strategy",
+      "Google Search Console",
+      "Google Analytics",
+      "Google Tag Manager",
+      "Ahrefs",
+      "SEMrush",
+      "WordPress SEO",
+      "Salla SEO",
+      "E-commerce SEO"
+    ]
+  }
+  </script>
+
   <!-- Favicon -->
 
   <link
@@ -171,9 +210,7 @@ import Navbar from "../components/Navbar.astro";
   <Navbar />
 
   <main>
-
     <slot />
-
   </main>
 
 </body>
