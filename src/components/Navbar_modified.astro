@@ -133,8 +133,6 @@ align-items:center;
 
 height:82px;
 
-position:relative;
-
 }
 
 .brand{
@@ -302,6 +300,8 @@ z-index:998;
 .mobile-menu{
 
 position:fixed;
+transform:translateX(30px);
+opacity:0;
 
 top:0;
 
@@ -321,7 +321,7 @@ flex-direction:column;
 
 box-shadow:-8px 0 25px rgba(0,0,0,.12);
 
-transition:.35s;
+transition:right .35s ease, transform .35s ease, opacity .25s ease;
 
 z-index:999;
 
@@ -330,7 +330,8 @@ z-index:999;
 .mobile-menu.active{
 
 right:0;
-
+transform:translateX(0);
+opacity:1;
 }
 
 .menu-overlay.active{
@@ -450,7 +451,6 @@ display:none;
 display:block;
 
 order:1;
-margin-right:auto;
 
 }
 
@@ -471,7 +471,7 @@ height:46px;
 }
 
 .brand h3{
-white-space:nowrap;
+
 font-size:19px;
 
 }
@@ -487,6 +487,11 @@ font-size:12px;
 height:74px;
 
 }
+
+.brand img{
+display:none;
+}
+.brand{gap:0;}
 
 }
 
